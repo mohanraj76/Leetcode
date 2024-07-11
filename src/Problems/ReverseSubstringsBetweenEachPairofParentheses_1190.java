@@ -12,6 +12,7 @@ public class ReverseSubstringsBetweenEachPairofParentheses_1190 {
         int endind = rs.indexOf(")",startind);
 
         while (startind != -1){
+
             StringBuilder ss = new StringBuilder(rs.substring(startind+1,endind));
             ss.reverse();
             rs.replace(startind,endind+1,ss.toString());
