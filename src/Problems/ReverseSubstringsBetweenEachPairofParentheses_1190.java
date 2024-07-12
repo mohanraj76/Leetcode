@@ -14,7 +14,7 @@ public class ReverseSubstringsBetweenEachPairofParentheses_1190 {
 
             StringBuilder ss = new StringBuilder(rs.substring(startind+1,endind));
             ss.reverse();
-            rs.replace(startind,endind+1,ss.toString());
+            System.out.println(rs.replace(startind,endind+1,ss.toString()));
             startind = rs.lastIndexOf("(");
             endind = rs.indexOf(")", startind);
         }
